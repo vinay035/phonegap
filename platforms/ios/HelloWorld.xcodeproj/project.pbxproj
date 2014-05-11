@@ -5,12 +5,15 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
+		09F2B32FE72344AD9DB2BE07 /* PushPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = AA75204DF8154C8D8436594A /* PushPlugin.m */; };
 		1805B55BA13C49D2BE8A5377 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CEB4D8321041BEAB63058B /* libsqlite3.dylib */; };
+		1B30A5525A254B1097DE0080 /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = BA80F604D74E4AD8A347B6DC /* CDVVibration.m */; };
+		1C9C33C6AF814715AEDB6AE7 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F8485FCB52A340B196339510 /* CDVNotification.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1F766FE113BBADB100FB74C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F766FDC13BBADB100FB74C0 /* Localizable.strings */; };
+		24452146EE2843F89F7A8FAA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5C7480D85D4466A9F9B0EE /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
@@ -33,6 +36,7 @@
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		76656FEF191EA2E6000ED287 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76656FEE191EA2E6000ED287 /* Images.xcassets */; };
 		76D016B2191E3A410042B1F7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D016B1191E3A410042B1F7 /* FacebookSDK.framework */; };
+		76F2A95A191F8CA2006EE372 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 773BF9E02CB644179C7FB1CC /* CDVStatusBar.m */; };
 		78BFC811C8514D4FBF80D0D7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFAA562B99940EDBA41ED08 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		7E7966DE1810823500FA85AD /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D41810823500FA85AD /* icon-40.png */; };
 		7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D51810823500FA85AD /* icon-40@2x.png */; };
@@ -47,6 +51,8 @@
 		86B774F8D32A47F3B95B8C3A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD52865232745BEB1EA515E /* FacebookSDK.framework */; };
 		9C29956003AC4F5EA547BB69 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF721F0E11C40AFB78E12DE /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BFB5B0E3BDE74D38B093BEBC /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA44FD9E174BC2A8795D7B /* CDVDevice.m */; };
+		C0A9B6CD0150416EB1FBFD3A /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A722E0312204718B6CAEF83 /* CDVNotification.bundle */; };
+		D0BA5EFEC35B49BBA5C62733 /* AppDelegate+notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAA8B2754514DB89C3B15A9 /* AppDelegate+notification.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		E0B78306D71A4CCE96DE3E6B /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0FD4AE508494A8F4A3588 /* CDVLogger.m */; };
 		EAFED158707B446EB03D5464 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CE577DF0814901A31CE6DB /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -80,6 +86,7 @@
 		1F766FE013BBADB100FB74C0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DAA8B2754514DB89C3B15A9 /* AppDelegate+notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+notification.m"; path = "com.phonegap.plugins.PushPlugin/AppDelegate+notification.m"; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -108,7 +115,9 @@
 		76656FEE191EA2E6000ED287 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HelloWorld/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		76D016B1191E3A410042B1F7 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../../Users/vinayagarwal/Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		773BF9E02CB644179C7FB1CC /* CDVStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = com.phonegap.plugin.statusbar/CDVStatusBar.m; sourceTree = "<group>"; };
+		7A722E0312204718B6CAEF83 /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CDVNotification.bundle; sourceTree = "<group>"; };
 		7B0E579317314BD58FFA2737 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVInAppBrowser.m; path = org.apache.cordova.inappbrowser/CDVInAppBrowser.m; sourceTree = "<group>"; };
+		7C1ACDE05B6941B1B2345DC2 /* PushPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushPlugin.h; path = com.phonegap.plugins.PushPlugin/PushPlugin.h; sourceTree = "<group>"; };
 		7E7966D41810823500FA85AD /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
 		7E7966D51810823500FA85AD /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
 		7E7966D61810823500FA85AD /* icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-50.png"; sourceTree = "<group>"; };
@@ -120,11 +129,16 @@
 		7E7966DC1810823500FA85AD /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
 		7E7966DD1810823500FA85AD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
 		8013034032A34191A9E0E13B /* CDVDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = org.apache.cordova.device/CDVDevice.h; sourceTree = "<group>"; };
+		8535CFEA4B764731A5A7D073 /* CDVVibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVVibration.h; path = org.apache.cordova.vibration/CDVVibration.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HelloWorld-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HelloWorld-Info.plist"; path = "../HelloWorld-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		9C1451BEA3CF41D8BBB4D1BA /* CDVLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLogger.h; path = org.apache.cordova.console/CDVLogger.h; sourceTree = "<group>"; };
 		9E1C71E386814339B70289F5 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookConnectPlugin.m; path = com.phonegap.plugins.facebookconnect/FacebookConnectPlugin.m; sourceTree = "<group>"; };
 		A0FA44FD9E174BC2A8795D7B /* CDVDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = org.apache.cordova.device/CDVDevice.m; sourceTree = "<group>"; };
 		A3E0FD4AE508494A8F4A3588 /* CDVLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVLogger.m; path = org.apache.cordova.console/CDVLogger.m; sourceTree = "<group>"; };
+		AA75204DF8154C8D8436594A /* PushPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushPlugin.m; path = com.phonegap.plugins.PushPlugin/PushPlugin.m; sourceTree = "<group>"; };
+		AB5C7480D85D4466A9F9B0EE /* AudioToolbox.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BA80F604D74E4AD8A347B6DC /* CDVVibration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVVibration.m; path = org.apache.cordova.vibration/CDVVibration.m; sourceTree = "<group>"; };
+		BB9066CD9027440EA54E1B12 /* AppDelegate+notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+notification.h"; path = "com.phonegap.plugins.PushPlugin/AppDelegate+notification.h"; sourceTree = "<group>"; };
 		CCF721F0E11C40AFB78E12DE /* Security.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		DAD52865232745BEB1EA515E /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = HelloWorld/Plugins/com.phonegap.plugins.facebookconnect/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -132,6 +146,8 @@
 		EB87FDF21871DA7A0020F90C /* merges */ = {isa = PBXFileReference; lastKnownFileType = folder; name = merges; path = ../../merges; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = HelloWorld/config.xml; sourceTree = "<group>"; };
+		F8485FCB52A340B196339510 /* CDVNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVNotification.m; path = org.apache.cordova.dialogs/CDVNotification.m; sourceTree = "<group>"; };
+		FE6272A098514E9DA001ED71 /* CDVNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVNotification.h; path = org.apache.cordova.dialogs/CDVNotification.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +167,7 @@
 				EAFED158707B446EB03D5464 /* Accounts.framework in Frameworks */,
 				FEEC24EFBE9C47E1A4C99430 /* AdSupport.framework in Frameworks */,
 				9C29956003AC4F5EA547BB69 /* Security.framework in Frameworks */,
+				24452146EE2843F89F7A8FAA /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +250,7 @@
 				308D052D1370CCF300D202BF /* icons */,
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* HelloWorld-Info.plist */,
+				7A722E0312204718B6CAEF83 /* CDVNotification.bundle */,
 			);
 			name = Resources;
 			path = HelloWorld/Resources;
@@ -251,6 +269,7 @@
 				42CE577DF0814901A31CE6DB /* Accounts.framework */,
 				44D352D196FC4370ABE88BF0 /* AdSupport.framework */,
 				CCF721F0E11C40AFB78E12DE /* Security.framework */,
+				AB5C7480D85D4466A9F9B0EE /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,6 +295,14 @@
 				9C1451BEA3CF41D8BBB4D1BA /* CDVLogger.h */,
 				773BF9E02CB644179C7FB1CC /* CDVStatusBar.m */,
 				1404D06DBFFB491BA10C8533 /* CDVStatusBar.h */,
+				2DAA8B2754514DB89C3B15A9 /* AppDelegate+notification.m */,
+				AA75204DF8154C8D8436594A /* PushPlugin.m */,
+				BB9066CD9027440EA54E1B12 /* AppDelegate+notification.h */,
+				7C1ACDE05B6941B1B2345DC2 /* PushPlugin.h */,
+				F8485FCB52A340B196339510 /* CDVNotification.m */,
+				FE6272A098514E9DA001ED71 /* CDVNotification.h */,
+				BA80F604D74E4AD8A347B6DC /* CDVVibration.m */,
+				8535CFEA4B764731A5A7D073 /* CDVVibration.h */,
 			);
 			name = Plugins;
 			path = HelloWorld/Plugins;
@@ -445,6 +472,7 @@
 				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+				C0A9B6CD0150416EB1FBFD3A /* CDVNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +508,11 @@
 				32271202A1AF461CAB46EB17 /* CDVInAppBrowser.m in Sources */,
 				BFB5B0E3BDE74D38B093BEBC /* CDVDevice.m in Sources */,
 				E0B78306D71A4CCE96DE3E6B /* CDVLogger.m in Sources */,
+				D0BA5EFEC35B49BBA5C62733 /* AppDelegate+notification.m in Sources */,
+				76F2A95A191F8CA2006EE372 /* CDVStatusBar.m in Sources */,
+				09F2B32FE72344AD9DB2BE07 /* PushPlugin.m in Sources */,
+				1C9C33C6AF814715AEDB6AE7 /* CDVNotification.m in Sources */,
+				1B30A5525A254B1097DE0080 /* CDVVibration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +603,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = HelloWorld;
+				PROVISIONING_PROFILE = "686F21F4-BED1-4EFB-95B2-111CFA650A16";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -617,6 +651,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = HelloWorld;
+				PROVISIONING_PROFILE = "686F21F4-BED1-4EFB-95B2-111CFA650A16";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";

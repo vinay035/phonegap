@@ -37,21 +37,51 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        window.open('http://rrb11.com', '_blank', 'location=no');
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
-        var element = document.getElementById('deviceProperties');
-        element.innerHTML = 'Device Name: '     + device.name     + '<br />' +
-        'Device Cordova: '  + device.cordova  + '<br />' +
-        'Device Platform: ' + device.platform + '<br />' +
-        'Device UUID: '     + device.uuid     + '<br />' +
-        'Device Model: '    + device.model    + '<br />' +
-        'Device Version: '  + device.version  + '<br />';
+        try
+        {
+            var parentElement = document.getElementById(id);
+            var listeningElement = parentElement.querySelector('.listening');
+            var receivedElement = parentElement.querySelector('.received');
+            
+            listeningElement.setAttribute('style', 'display:none;');
+            receivedElement.setAttribute('style', 'display:block;');
+            
+            console.log('Received Event: ' + id);
+            if('android' === device.platform.toLowerCase()) {
+    window.plugins.pushNotification.register(function() { }, function() { }, {
+        ecb      : 'onNotificationGCM',
+        senderID : 'Project ID'// Google Project ID.
+    });
+}
+else {// iOS.
+    window.plugins.pushNotification.register(function(token) {
+        // Successfully registered device.
+        alert(token);
+    }, function(error) {
+        // Failed to register device.
+        console.log(error);
+    }, {
+        alert : 'true',
+        badge : 'true',
+        sound : 'true',
+        ecb   : 'onNotificationAPN'
+    });
+}
+// Method to handle device registration for Android.
+var onNotificationGCM = function(e) {
+    if('registered' === e.event) {
+        // Successfully registered device.
+    }
+    else if('error' === e.event) {
+        // Failed to register device.
+    }
+};
+// Method to handle notifications on iOS.
+var onNotificationAPN = function(e) {console.log(e); };
+        }
+        catch(err)
+        {
+            console.log(err);
+        }
     }
 };

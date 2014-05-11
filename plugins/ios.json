@@ -115,13 +115,19 @@
         "framework": {
             "CoreGraphics.framework": {
                 "false": 1
+            },
+            "AudioToolbox.framework": {
+                "true": 2
             }
         },
         "config.xml": {
             "/*": {
                 "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>": 1,
                 "<access origin=\"https://oauth.io\" />": 1,
-                "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>": 1
+                "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>": 1,
+                "<feature name=\"PushPlugin\"><param name=\"ios-package\" value=\"PushPlugin\" /></feature>": 1,
+                "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>": 1,
+                "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>": 1
             }
         }
     },
@@ -141,6 +147,15 @@
             "PACKAGE_NAME": "com.Science.vinay035"
         },
         "com.phonegap.plugin.statusbar": {
+            "PACKAGE_NAME": "com.Science.vinay035"
+        },
+        "com.phonegap.plugins.PushPlugin": {
+            "PACKAGE_NAME": "com.Science.vinay035"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "com.Science.vinay035"
+        },
+        "org.apache.cordova.vibration": {
             "PACKAGE_NAME": "com.Science.vinay035"
         }
     },

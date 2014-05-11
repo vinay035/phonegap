@@ -23,6 +23,12 @@
     <feature name="Console">
         <param name="ios-package" value="CDVLogger" />
     </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
+    <feature name="Vibration">
+        <param name="ios-package" value="CDVVibration" />
+    </feature>
     <name>HelloWorld</name>
     <description>
         Hello World sample application that responds to the deviceready event.
@@ -42,6 +48,9 @@
     </feature>
     <feature name="StatusBar">
         <param name="ios-package" value="CDVStatusBar" />
+    </feature>
+    <feature name="PushPlugin">
+        <param name="ios-package" value="PushPlugin" />
     </feature>
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />

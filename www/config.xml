@@ -33,6 +33,9 @@
     <feature name="StatusBar">
         <param name="ios-package" value="CDVStatusBar" />
     </feature>
+    <feature name="PushPlugin">
+        <param name="ios-package" value="PushPlugin" />
+    </feature>
 
     <!--
         If you do not want any permissions to be added to your app, add the
